@@ -1,0 +1,95 @@
+/*** 
+
+====================================================================
+    Section Title
+====================================================================
+
+***/
+
+.sec-title {
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 2;
+    @include media-breakpoint-down(md){
+        br {display: none;}
+    }
+    .sub-icon {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    .sub-title {
+        position: relative;
+        display: block;
+        font-size: var(--sec-title-subtitle-font-size);
+        line-height: var(--sec-title-subtitle-line-height);
+        font-weight: var(--sec-title-subtitle-font-weight);
+        font-family: var(--sec-title-subtitle-font-family);
+        color: var(--sec-title-subtitle-color);
+        letter-spacing: .120em;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    h1{
+        position: relative;
+        font-size: var(--h1-font-size);
+        line-height: 1.2em;
+        margin-bottom: 0;
+        @include media-breakpoint-down(xl) {
+            font-size: 84px;
+        }
+        @include media-breakpoint-down(lg){
+            font-size: 72px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 68px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 36px;
+        }
+    }
+    
+    h2 {
+        position: relative;
+        font-size: var(--sec-title-font-size);
+        color: var(--sec-title-color);
+        font-family: var(--sec-title-font-family);
+        font-weight: var(--sec-title-font-weight);
+        margin-bottom: 0;
+        letter-spacing: -.03em;
+        line-height: 1em;
+        z-index: 2;
+        @include media-breakpoint-down(xl){
+            line-height: 1em;
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 46px;
+            br{display: none;}
+        }
+    }
+    .text {
+        position: relative;
+        color: var(--theme-color-dark);
+        margin-top: 20px;
+        @include media-breakpoint-down(sm){
+            font-size: 16px;
+        }
+    }
+
+    &.light{
+        .sub-title {
+            color: var(--theme-color-light);
+            &:before {
+                background: var(--theme-color-light);
+            }
+        }
+        .text{
+            color: var(--theme-color-light);
+        }
+        h2,
+        h1{
+            color: var(--theme-color-light);
+        }
+    }
+}

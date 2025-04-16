@@ -1,0 +1,98 @@
+/*** 
+
+====================================================================
+    Funfacts Section
+====================================================================
+
+***/
+
+.funfact-section {
+    position: relative;
+    padding: 10px 0 30px;
+}
+
+.counter-block {
+    margin-bottom: 90px;
+    &:last-child {
+        .inner-box {&:before {display: none;}}
+    }
+    .inner-box {
+        position: relative;
+        text-align: center;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 35px;
+            right: -40px;
+            width: 26px;
+            height: 54px;
+            background-image: url(../images/icons/icon-line.png);
+        }
+        &:hover {
+            .icon-box {
+                .icon {
+                    transform: scaleX(-1);
+                }
+            }
+        }
+        .icon-box {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 8px;
+            &.two {
+                &:before {
+                    right: auto;
+                    left: -17px;
+                }
+            }
+            &.three {
+                &:before {
+                    right: 50%;
+                    transform: translate(50%);
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                right: -7px;
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                background-color: var(--theme-color1);
+            }
+            .icon {
+                position: relative;
+                display: inline-block;
+                color: var(--theme-color-dark);
+                font-size: 105px;
+                line-height: 1em;
+                @include transition(all 300ms ease);
+                @include media-breakpoint-down(sm){
+                    font-size: 80px;
+                }
+            }
+        }
+        .counter-one {
+            position: relative;
+            font-size: 90px;
+            line-height: 1em;
+            letter-spacing: 0.04em;
+            font-family: var(--title-font);
+            color: var(--theme-color-dark);
+            margin-bottom: 0;
+            @include media-breakpoint-down(sm){
+                font-size: 60px;
+            }
+        }
+        .counter-text {
+            position: relative;
+            font-size: 20px;
+            line-height: 1em;
+            color: var(--theme-color-dark);
+            margin-bottom: 0;
+            margin-top: -10px;
+            text-transform: uppercase;
+        }
+    }
+}
