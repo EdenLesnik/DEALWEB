@@ -1,6 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
-}
+{"/_app":"pages/_app.js","/_document":"pages/_document.js","/_error":"pages/_error.js","/api/hello":"pages/api/hello.js","/index-MAIN":"pages/index-MAIN.html","/index-2":"pages/index-2.html","/news-details":"pages/news-details.html","/":"pages/index.html","/page-about":"pages/page-about.html","/news-grid":"pages/news-grid.html","/page-error":"pages/page-error.html","/page-contact":"pages/page-contact.html","/page-faq":"pages/page-faq.html","/page-booking":"pages/page-booking.html","/page-pricing":"pages/page-pricing.html","/page-services":"pages/page-services.html","/page-service-details":"pages/page-service-details.html","/page-team-details":"pages/page-team-details.html","/page-taxi-list":"pages/page-taxi-list.html","/page-team":"pages/page-team.html","/page-testimonial":"pages/page-testimonial.html","/404":"pages/404.html"}
